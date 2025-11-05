@@ -1,4 +1,4 @@
-site_name: Marcos Luchetti | Docs
+site_name: mluchetti.com
 site_url: https://mluchetti.com
 dev_addr: 127.0.0.1:7885
 theme:
@@ -55,6 +55,8 @@ extra:
   social:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/marcos-luchetti/
+    - icon: fontawesome/brands/github
+      link: https://github.com/mluchettii
 
 
 copyright: Copyright &copy; 2025 Marcos Luchetti
