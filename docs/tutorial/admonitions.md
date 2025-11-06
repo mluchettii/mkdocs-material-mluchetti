@@ -1,3 +1,5 @@
+Callout:
+
 !!! note "Title of the callout"
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod

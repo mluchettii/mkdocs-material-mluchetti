@@ -4,7 +4,9 @@ tags:
     - VirtualBox
 ---
 
-<img src="https://latestlogo.com/wp-content/uploads/2024/09/virtualbox-logo.png" width="450" height="57">
+# VirtualBox
+
+## Description
 
 Oracle VirtualBox is a virtualization solution that allows you to run multiple guest operating systems on a single physical host. I use this to create isolated environments for testing in my homelab, using Windows and Linux operating systems. With this, I can replicate real-world scenarios for vulnerability assessments, log analysis, and threat detection.
 
@@ -35,4 +37,4 @@ Lastly, the host-only network mode is used creates a private network exclusively
     |HTTPS|TCP|127.0.0.1|443|192.168.14.0|10443|
     |SSH|TCP|127.0.0.1|22|192.168.14.0|10022|
 
-    ![alt text](vbox-portforward.png)
+    ![alt text](images/vbox-portforward.png)

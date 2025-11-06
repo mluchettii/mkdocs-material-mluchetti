@@ -20,6 +20,7 @@ theme:
     - navigation.top
     - search.suggest
     - search.highlight
+    - content.code.copy
 
   palette:
     # Dark Mode
@@ -35,21 +36,28 @@ theme:
       toggle:
         icon: material/weather-night
         name: Light mode
-      primary: indigo
-      accent: deep purple
+      primary: black
+      accent: indigo
 
 
 nav:
   - Home: index.md
   - About:
     - About Me: about/about.md
-  - Server:
-    - Setup: server/server.md
+  - Docs:
+    - Setup: docs/index.md
     - Virtualization:
-      - VirtualBox: server/virtualization/virtualbox.md
-  - Tags: tags.md
+      - VirtualBox: docs/virtualization/virtualbox.md
+    - Web Servers:
+      - Caddy: docs/web-servers/caddy.md
+      - Nginx Proxy Manager: docs/web-servers/npm.md
   - Blog:
     - blog/index.md
+  - Tags: tags.md
+  # - Tutorial:
+  #   - tutorial/admonitions.md
+  #   - tutorial/content-tabs.md
+  #   - tutorial/diagram-examples.md
 
 
 plugins:
