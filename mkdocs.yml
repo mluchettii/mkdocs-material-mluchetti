@@ -1,13 +1,13 @@
-site_name: mluchetti.com
+site_name: Marcos Luchetti
 site_url: https://mluchetti.com
 dev_addr: 127.0.0.1:7885
 theme:
   name: material
-#  font:
-#    text: Merriweather Sans
-#    code: Red Hat Mono
-  logo: assets/ml-icon.svg
-  favicon: assets/ml-icon.svg
+  font:
+    text: Roboto
+    code: Roboto Mono
+  logo: assets/ml-icon.png
+  favicon: assets/ml-icon.png
   features:
     - navigation.footer
     - navigation.instant
@@ -27,8 +27,8 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Dark mode
-      primary: indigo
-      accent: deep purple
+      primary: black
+      accent: indigo
 
     # Light Mode
     - scheme: default

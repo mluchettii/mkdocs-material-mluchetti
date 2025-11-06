@@ -1,10 +1,8 @@
 ---
 tags:
-    - VirtualBox
     - Virtualization
+    - VirtualBox
 ---
-
-...
 
 <img src="https://latestlogo.com/wp-content/uploads/2024/09/virtualbox-logo.png" width="450" height="57">
 
