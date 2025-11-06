@@ -10,6 +10,17 @@ theme:
   favicon: assets/ml-icon.svg
   features:
     - navigation.footer
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+
   palette:
     # Dark Mode
     - scheme: slate
@@ -26,6 +37,25 @@ theme:
         name: Light mode
       primary: indigo
       accent: deep purple
+
+
+nav:
+  - Home: index.md
+  - About:
+    - About Me: about/about.md
+  - Server:
+    - Setup: server/server.md
+    - Virtualization:
+      - VirtualBox: server/virtualization/virtualbox.md
+  - Tags: tags.md
+  - Blog:
+    - blog/index.md
+
+
+plugins:
+  - search
+  - tags
+  - blog
 
 
 markdown_extensions:

@@ -1,3 +1,11 @@
+---
+tags:
+    - VirtualBox
+    - Virtualization
+---
+
+...
+
 <img src="https://latestlogo.com/wp-content/uploads/2024/09/virtualbox-logo.png" width="450" height="57">
 
 Oracle VirtualBox is a virtualization solution that allows you to run multiple guest operating systems on a single physical host. I use this to create isolated environments for testing in my homelab, using Windows and Linux operating systems. With this, I can replicate real-world scenarios for vulnerability assessments, log analysis, and threat detection.
