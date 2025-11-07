@@ -46,6 +46,10 @@ nav:
     - About Me: about/about.md
   - Docs:
     - Setup: docs/index.md
+    - SIEM/EDR:
+      - CrowdStrike Falcon: docs/siem-edr/crowdstrike/falcon.md
+      - IBM QRadar: docs/siem-edr/qradar/qradar.md
+      - Wazuh: docs/siem-edr/wazuh/wazuh.md
     - Virtualization:
       - VirtualBox: docs/virtualization/virtualbox.md
     - Web Servers:
