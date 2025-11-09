@@ -52,7 +52,7 @@ Wazuh integrates the CIS (Center for Internet Security) Benchmarks into its Secu
 
 Agents are the endpoints that are monitored by Wazuh.
 
-1. Open the Wazuh console and click on the button that says 'Deploy a new agent'.
+1. Open the Wazuh console and click on the button that says **Deploy a new agent**.
 
 2. On the next screen, provide your system information and copy the installation command. It should look something like this:
 
@@ -66,7 +66,7 @@ Agents are the endpoints that are monitored by Wazuh.
     NET START Wazuh
     ```
 
-4. Use the 'Wazuh Agent' Windows application to verify that it's running:
+4. Use the **Wazuh Agent** Windows application to verify that it's running:
 
     ![alt text](images/wazuh-agent.png){: style="width:33%;" }
 
@@ -74,7 +74,7 @@ Agents are the endpoints that are monitored by Wazuh.
 
 ### Linux (Fedora)
 
-1. Open the Wazuh console and click on the button that says 'Deploy a new agent'.
+1. Open the Wazuh console and click on the button that says **Deploy a new agent**.
 
 2. On the next screen, provide your system information and copy the installation command. It should look something like this:
 
@@ -102,7 +102,7 @@ Agents are the endpoints that are monitored by Wazuh.
 
 ### CIS Microsoft Windows 11 Enterprise Benchmark
 
-Click on 'Endpoints', then click on a Windows agent. A CIS Benchmark scan should have automatically started by now.
+Click on **Endpoints**, then click on a Windows agent. A CIS Benchmark scan should have automatically started by now.
 
 Once the scan has completed, go over the results to see what vulnerabilities there are on your system. Your score should be somewhere around 30%, which is to be expected:
 
@@ -126,12 +126,12 @@ CIS Windows 11 control check details
 
 ### CIS Distribution Independent Linux Benchmark
 
-Go back to 'Endpoints' and click on a Linux agent. Look over the CIS Benchmark results. This time, I will show you an example of how to remediate a failed control check manually.
+Go back to **Endpoints** and click on a Linux agent. Look over the CIS Benchmark results. This time, I will show you an example of how to remediate a failed control check manually.
 
 <figure markdown>
 ![alt text](images/wazuh-control-check-linux.png){: style="width:50%;" }
 <figcaption markdown class="annotate">
-Failed check: 'Ensure login and logout events are collected'
+Failed check: ***Ensure login and logout events are collected**
 </figcaption>
 </figure>
 

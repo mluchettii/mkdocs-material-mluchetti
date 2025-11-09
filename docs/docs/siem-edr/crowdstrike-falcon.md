@@ -7,7 +7,6 @@ tags:
     - Virtualization
     - Windows
     - Linux
-    - VirtualBox
     - VirusTotal
     - ANY.RUN
 ---
@@ -26,13 +25,13 @@ The **Falcon sensor** is a lightweight, intelligent software module installed on
 
 1. Download the Falcon sensor from the Falcon Main view hub.
 
-2. Paste in your Customer ID and click 'Install'.
+2. Paste in your **Customer ID** and click **Install**.
 
 3. Once installation has finished, your device will appear in the hosts dashboard.
 
 ### Linux installation
 
-1. From 'Sensor downloads', download and install the appropriate package for your distribution.
+1. From **Sensor downloads**, download and install the appropriate package for your distribution.
 
 
     ```bash title="For Debian-based"
@@ -62,9 +61,9 @@ The **Falcon sensor** is a lightweight, intelligent software module installed on
 
 CrowdStrike's Falcon sensor is capable of detecting malware in real time using advanced techniques. This includes file analysis, machine learning, behavioral analysis, and threat intelligence -- all of these help Falcon quickly identify and respond to both known and unknown malware, ransomware, and fileless attacks. Once a threat is detected, Falcon isolates the affected endpoint and generates detailed reports for security teams, also providing tactical insights from frameworks like MITRE ATT&CK.
 
-### Triage
+### Triage process
 
-Prepare a Windows 11 virtual machine with the Falcon sensor installed on it. Then, practice threat detection and investigation with Falcon, threat analysis with VirusTotal and ANY.RUN, and then write your own triage documentation.
+To gain an understanding of the triage process, prepare a Windows 11 virtual machine with the Falcon sensor installed on it. Then, practice threat detection and investigation with Falcon, threat analysis with **VirusTotal** and **ANY.RUN**, and then compile a triage report.
 
 #### Threat detection
 
@@ -80,15 +79,15 @@ Prepare a Windows 11 virtual machine with the Falcon sensor installed on it. The
 
 #### Threat investigation
 
-1. From the Falcon Hub, click on the 'Next-gen AV' tab. You will see a list of recently quarantined items with file names, date of quarantine, affected host, and the user associated with the event.
+1. From the Falcon Hub, click on the **Next-gen AV** tab. You will see a list of recently quarantined items with file names, date of quarantine, affected host, and the user associated with the event.
 
-2. Expand the sidebar, then click 'Endpoint security' > 'Activity dashboard'.
+2. Expand the sidebar, then navigate to **Endpoint security -> Activity dashboard**.
 
-3. Click 'See details' beside the most recent detection.
+3. Click **See details** beside the most recent detection.
 
     !!! note "Detection details"
 
-        This information pertains to the event's severity, detection tactic and technique, process origin, etc. Take note of the SHA256 hash value found under the 'Triggering Indicator'. This hash value is unique to the malicious file and can be used for further threat investigation.
+        This information pertains to the event's severity, detection tactic and technique, process origin, etc. Take note of the SHA256 hash value found under the **Triggering Indicator**. This hash value is unique to the malicious file and can be used for further threat investigation.
 
 
 #### Threat analysis
@@ -97,7 +96,7 @@ Prepare a Windows 11 virtual machine with the Falcon sensor installed on it. The
 
 1. Copy the hash value to your clipboard.
 
-2. Go on [VirusTotal](https://www.virustotal.com/) and paste the hash into the 'Search' field.
+2. Go on [VirusTotal](https://www.virustotal.com/) and paste the hash into the **Search** field.
 
 3. Here, you can see the severity score, security vendor analyses, behavior, community insights, etc., pertaining to the threat.
 
@@ -105,7 +104,7 @@ Prepare a Windows 11 virtual machine with the Falcon sensor installed on it. The
 
 1. Go on [ANY.RUN](https://app.any.run/) to detonate the malware in an interactive malware analysis sandbox (business email required).
 
-2. Click on 'Submit URL' and enter the URL of the malware repo from earlier:
+2. Click on **Submit URL** and enter the URL of the malware repo from earlier:
 
     <https://github.com/Da2dalus/The-MALWARE-Repo>
 
@@ -193,7 +192,7 @@ CrowdStrike Falcon supports **on-demand scans** can be run immediately or schedu
 
 Create a new scan template that will be used by Falcon to scan specific directories within certain endpoints for threats.
 
-1. To create a new scan, expand the sidebar, then click on 'Endpoint security' > 'On-demand scans'.
+1. To create a new scan, expand the sidebar, then navigate to **Endpoint security -> On-demand scans**.
 
 2. In the scan configuration, select when you want the scan to begin, which host machine targets to scan, and the file paths and exclusions.
 
@@ -201,9 +200,9 @@ Create a new scan template that will be used by Falcon to scan specific director
 
         For Windows endpoints, you will be notified from the endpoint itself of the start/completion of the scan, and if suspicious files were detected.
 
-3. Go back to the Falcon 'On-demand scans' page. Click on the most recent scan with the status of 'Completed', then click on 'See full details' on the right pane.
+3. Go back to the Falcon **On-demand scans** page. Click on the most recent scan with the status of **Completed**, then click on **See full details** on the right pane.
 
-4. Here, you can see a list of files that were detected as malicious. Click on the square icon to the right of any detection, and click 'Investigate hash'.
+4. Here, you can see a list of files that were detected as malicious. Click on the square icon to the right of any detection, and click **Investigate hash**.
 
 5. From here, you can begin triaging like in the previous exercise, using tools like [VirusTotal](https://www.virustotal.com/) and [ANY.RUN](https://app.any.run/) to aid you in your investigation.
 
@@ -211,7 +210,7 @@ Create a new scan template that will be used by Falcon to scan specific director
 
 CrowdStrike Falcon uses **Indicators of Compromise (IOCs)** as digital forensic clues to detect and respond to security breaches. IOCs are pieces of evidence (file hashes, IP addresses, domains, registry keys, or unusual system behaviors) that suggest a device or network has been compromised. Falcon allows security teams to create, manage, and deploy custom IOCs to proactively detect, track, and block known threats in their environment.
 
-One of Falcon's features is **IOC management**. With this, you can add, review, and update indicators like file hashes (SHA256, SHA1, MD5), malicious domains, or IP addresses. You can also specify actions such as "Detect Only" (flag suspicious activity) or "Detect & Prevent" (block immediately). Regular review and auditing of IOCs help maintain effectiveness and reduce false positives. 
+One of Falcon's features is **IOC management**. With this, you can add, review, and update indicators like file hashes (SHA256, SHA1, MD5), malicious domains, or IP addresses. You can also specify actions such as *Detect Only* (flag suspicious activity) or *Detect & Prevent* (block immediately). Regular review and auditing of IOCs help maintain effectiveness and reduce false positives. 
 
 Additionally, **Machine Learning (ML) exclusions** in Falcon are used to prevent the ML-based detection engine from flagging certain files, processes, or scenarios that are known to be safe but might otherwise be incorrectly detected as malicious. In SIEM/EDR environments, this configuration of IOCs and ML exclusions is called **tuning**.
 
@@ -221,11 +220,11 @@ The first part of this covers the creation of a **custom IOC** for a malicious f
 
 #### Create a custom IOC
 
-Suppose that there is a malicious file that does not get automatically quarantined by the Falcon sensor. One such example from [The-MALWARE-Repo](https://github.com/Da2dalus/The-MALWARE-Repo) is the Trojan executable named 'StartBlueScreen.exe'. For this, you will create a custom IOC that detects a malicious file based on its hash value.
+Suppose that there is a malicious file that does not get automatically quarantined by the Falcon sensor. One such example from [The-MALWARE-Repo](https://github.com/Da2dalus/The-MALWARE-Repo) is the Trojan executable named **StartBlueScreen.exe**. For this, you will create a custom IOC that detects a malicious file based on its hash value.
 
-1. To create a custom IOC, expand the sidebar and click on 'Endpoint security' > 'IOC management'.
+1. To create a custom IOC, expand the sidebar and navigate to **Endpoint security -> IOC management**.
 
-2. Now, create an IOC by clicking on the button with the vertical three dots to the right,and click on 'Add hashes':
+2. Now, create an IOC by clicking on the button with the vertical three dots to the right, and click on **Add hashes**:
 
     * Add the hash value of the malicious file
 
@@ -249,18 +248,18 @@ Suppose that there is a malicious file that does not get automatically quarantin
 
 #### Create an ML exclusion
 
-Let's say that you want to exclude a certain file or files within a directory from being quarantined because you know that they will only be used for forensic purposes and will not pose a threat. For that, you will need to create an **ML exclusion**.
+To prevent certain files or folders from being quarantined because they are only used for forensic purposes and don’t pose a threat, create an **ML exclusion**.
 
-1. To create an ML exclusion, expand the sidebar and click on 'Endpoint security' > 'Exclusions'.
+1. To create an ML exclusion, expand the sidebar and navigate to **Endpoint security -> Exclusions**.
 
-2. Click on 'Create exclusion' in the lower navbar.
+2. Click on **Create exclusion** in the lower navbar.
 
-3. Select if you want the exclusion to apply to 'All hosts' or a 'Group of hosts', and click 'Next'.
+3. Select if you want the exclusion to apply to **All hosts** or a **Group of hosts**, and click **Next**.
 
 4. Check that the target(s) is excluded from detections and preventions.
 
-5. Under 'Exclusion pattern', enter the absolute path to the file or directory, or file type that you want to exclude.
+5. Under **Exclusion pattern**, enter the absolute path to the file or directory, or file type that you want to exclude.
 
-6. Add a comment for the audit log, and then click 'Create exclusion'.
+6. Add a comment for the audit log, and then click **Create exclusion**.
 
 With this ML exclusion, you can prevent non-threatening files from being quarantined and prevent alerts for false positives.

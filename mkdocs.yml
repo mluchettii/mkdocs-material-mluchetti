@@ -46,10 +46,14 @@ nav:
     - About Me: about/about.md
   - Docs:
     - Setup: docs/index.md
-    - SIEM/EDR:
+    - EDR/SIEM:
       - CrowdStrike Falcon: docs/siem-edr/crowdstrike-falcon.md
       - IBM QRadar: docs/siem-edr/ibm-qradar.md
       - Wazuh: docs/siem-edr/wazuh.md
+    - IAM:
+      - Cisco Duo: docs/iam/cisco-duo.md
+    - Remote Desktop:
+      - RustDesk: docs/remote-desktop/rustdesk.md
     - Virtualization:
       - VirtualBox: docs/virtualization/virtualbox.md
     - Web Servers:

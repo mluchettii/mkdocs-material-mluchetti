@@ -28,9 +28,9 @@ Lastly, the host-only network mode is used creates a private network exclusively
 
 ## How to forward a VM's ports within the NAT network
 
-1. In VirtualBox, open the Network preferences menu and select the 'NAT Networks' tab.
-2. Select the corresponding network and click the 'Port Forwarding' tab in the lower pane.
-3. To forward HTTPS and SSH ports, create entries that look like the following, where 'Protocol', 'Host IP', and 'Host Port' are unchanged:  
+1. In VirtualBox, open the Network preferences menu and select the **NAT Networks** tab.
+2. Select the corresponding network and click the **Port Forwarding** tab in the lower pane.
+3. To forward HTTPS and SSH ports, create entries that look like the following, where **Protocol**, **Host IP**, and **Host Port** are unchanged:  
 
     | Name | Protocol | Host IP | Host Port | Guest IP | Guest Port |
     | :---------: | :----------: | :----------: | :----------: | :----------: | :----------: |
