@@ -1,7 +1,6 @@
 ---
 tags:
     - CrowdStrike Falcon
-    - SIEM
     - EDR
     - Triage
     - Security
@@ -17,7 +16,7 @@ tags:
 
 ## Description
 
-**Falcon** is CrowdStrike's cloud-based, holistic SIEM platform that provides next-generation antivirus (NGAV), endpoint detection and response (EDR), cyber threat intelligence, and more capabilities that prevent all types of attacks. It is installed on endpoint devices as a lightweight sensor that consumes very little resources, and is capable of replacing AV entirely, as well as a suite of other independent tools. Falcon can be installed on Windows, Linux, and macOS, as well as mobile devices.
+**Falcon** is CrowdStrike's cloud-based endpoint security platform that provides next-generation antivirus (NGAV), endpoint detection and response (EDR), threat intelligence, and more capabilities to prevent all types of attacks. It installs on endpoint devices as a lightweight sensor that consumes minimal resources and can replace traditional antivirus and other independent security tools. Falcon supports Windows, Linux, macOS, and mobile devices.
 
 ## Falcon sensor
 
@@ -63,9 +62,9 @@ The **Falcon sensor** is a lightweight, intelligent software module installed on
 
 CrowdStrike's Falcon sensor is capable of detecting malware in real time using advanced techniques. This includes file analysis, machine learning, behavioral analysis, and threat intelligence -- all of these help Falcon quickly identify and respond to both known and unknown malware, ransomware, and fileless attacks. Once a threat is detected, Falcon isolates the affected endpoint and generates detailed reports for security teams, also providing tactical insights from frameworks like MITRE ATT&CK.
 
-### Triage exercise
+### Triage
 
-In this exercise, you will prepare a Windows 11 virtual machine with the Falcon sensor installed on it. Then, you will practice threat detection and investigation with Falcon, threat analysis with VirusTotal and ANY.RUN, and then write your own triage documentation.
+Prepare a Windows 11 virtual machine with the Falcon sensor installed on it. Then, practice threat detection and investigation with Falcon, threat analysis with VirusTotal and ANY.RUN, and then write your own triage documentation.
 
 #### Threat detection
 
@@ -190,15 +189,15 @@ Status: CLOSED | TRUE POSITIVE | DELETED
 
 CrowdStrike Falcon supports **on-demand scans** can be run immediately or scheduled for later on selected hosts or host groups. These scans detect and analyze potential security threats on endpoints. On-demand scans are particuarly useful for detecting malicious executables (e.g., .exe, .dll) and do not scan non-executable or archive files by default. This serves as an additional layer of inspection beyond Falcon's real-time protection.
 
-### Scanning exercise
+### Scanning
 
-For this exercise, you will create a new scan template that will be used by Falcon to scan specific directories within certain endpoints for threats.
+Create a new scan template that will be used by Falcon to scan specific directories within certain endpoints for threats.
 
 1. To create a new scan, expand the sidebar, then click on 'Endpoint security' > 'On-demand scans'.
 
 2. In the scan configuration, select when you want the scan to begin, which host machine targets to scan, and the file paths and exclusions.
 
-    !!! note "Scan notifications"
+    !!! info "Scan notifications"
 
         For Windows endpoints, you will be notified from the endpoint itself of the start/completion of the scan, and if suspicious files were detected.
 
@@ -206,7 +205,7 @@ For this exercise, you will create a new scan template that will be used by Falc
 
 4. Here, you can see a list of files that were detected as malicious. Click on the square icon to the right of any detection, and click 'Investigate hash'.
 
-5. From here, you can begin a triaging like in the previous exercise, using tools like [VirusTotal](https://www.virustotal.com/) and [ANY.RUN](https://app.any.run/) to aid you in your investigation.
+5. From here, you can begin triaging like in the previous exercise, using tools like [VirusTotal](https://www.virustotal.com/) and [ANY.RUN](https://app.any.run/) to aid you in your investigation.
 
 ## Indicators of Compromise
 
@@ -216,13 +215,13 @@ One of Falcon's features is **IOC management**. With this, you can add, review, 
 
 Additionally, **Machine Learning (ML) exclusions** in Falcon are used to prevent the ML-based detection engine from flagging certain files, processes, or scenarios that are known to be safe but might otherwise be incorrectly detected as malicious. In SIEM/EDR environments, this configuration of IOCs and ML exclusions is called **tuning**.
 
-### EDR tuning exercise
+### EDR tuning
 
-For the first part of this exercise, you will create a **custom IOC** for a malicious file. For the second part, you will create an **ML exclusion** that prevents false positives.
+The first part of this covers the creation of a **custom IOC** for a malicious file. The second part covers the creation of an **ML exclusion** that prevents false positives.
 
 #### Create a custom IOC
 
-Suppose that there is a malicious file that does not get automatically quarantined by the Falcon sensor. One such example from [The-MALWARE-Repo](https://github.com/Da2dalus/The-MALWARE-Repo) is the Trojan executable named 'StartBlueScreen.exe'. For this part of the exercise, you will create a custom IOC that detects a malicious file based on its hash value.
+Suppose that there is a malicious file that does not get automatically quarantined by the Falcon sensor. One such example from [The-MALWARE-Repo](https://github.com/Da2dalus/The-MALWARE-Repo) is the Trojan executable named 'StartBlueScreen.exe'. For this, you will create a custom IOC that detects a malicious file based on its hash value.
 
 1. To create a custom IOC, expand the sidebar and click on 'Endpoint security' > 'IOC management'.
 

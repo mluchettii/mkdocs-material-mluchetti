@@ -57,7 +57,7 @@ Access the NPM admin panel via the IP address of your machine:
 
 Proceed to log in using the initial default credentials:
 
-!!! note "Initial default credentials"
+!!! info "Initial default credentials"
 
     * **Email**: admin@example.com
     * **Password**: changeme
