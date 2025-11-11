@@ -87,7 +87,7 @@ To gain an understanding of the triage process, prepare a Windows 11 virtual mac
 
     !!! note "Detection details"
 
-        This information pertains to the event's severity, detection tactic and technique, process origin, etc. Take note of the SHA256 hash value found under the **Triggering Indicator**. This hash value is unique to the malicious file and can be used for further threat investigation.
+        This information pertains to the event's severity, detection tactic and technique, process origin, etc. Take note of the SHA256 **hash value** found under the **Triggering Indicator**. This hash value is unique to the malicious file and can be used for further threat investigation.
 
 
 #### Threat analysis
@@ -96,13 +96,13 @@ To gain an understanding of the triage process, prepare a Windows 11 virtual mac
 
 1. Copy the hash value to your clipboard.
 
-2. Go on [VirusTotal](https://www.virustotal.com/) and paste the hash into the **Search** field.
+2. Go on [**VirusTotal**](https://www.virustotal.com/) and paste the hash into the **Search** field.
 
 3. Here, you can see the severity score, security vendor analyses, behavior, community insights, etc., pertaining to the threat.
 
 ##### ANY.RUN
 
-1. Go on [ANY.RUN](https://app.any.run/) to detonate the malware in an interactive malware analysis sandbox (business email required).
+1. Go on [**ANY.RUN**](https://app.any.run/) to detonate the malware in an interactive malware analysis sandbox (business email required).
 
 2. Click on **Submit URL** and enter the URL of the malware repo from earlier:
 
@@ -204,7 +204,7 @@ Create a new scan template that will be used by Falcon to scan specific director
 
 4. Here, you can see a list of files that were detected as malicious. Click on the square icon to the right of any detection, and click **Investigate hash**.
 
-5. From here, you can begin triaging like in the previous exercise, using tools like [VirusTotal](https://www.virustotal.com/) and [ANY.RUN](https://app.any.run/) to aid you in your investigation.
+5. From here, you can begin triaging like in the previous exercise, using forensic tools like [VirusTotal](https://www.virustotal.com/) and [ANY.RUN](https://app.any.run/) to aid you in your investigation.
 
 ## Indicators of Compromise
 

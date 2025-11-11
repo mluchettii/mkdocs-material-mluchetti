@@ -21,6 +21,7 @@ theme:
     - search.suggest
     - search.highlight
     - content.code.copy
+    - content.tabs.link
 
   palette:
     # Dark Mode
@@ -43,15 +44,18 @@ theme:
 nav:
   - Home: index.md
   - About:
+    - About Me: about/me.md
     - Resume: about/resume.md
-  - Docs:
-    - Setup: docs/index.md
+  - Blog:
+    - blog/index.md
+  - Documentation:
+    - Setup: docs/setup.md
     - EDR/SIEM:
-      - CrowdStrike Falcon: docs/siem-edr/crowdstrike-falcon.md
-      - IBM QRadar: docs/siem-edr/ibm-qradar.md
-      - Wazuh: docs/siem-edr/wazuh.md
+      - CrowdStrike Falcon: docs/edr-siem/crowdstrike-falcon.md
+      - IBM QRadar: docs/edr-siem/ibm-qradar.md
+      - Wazuh: docs/edr-siem/wazuh.md
     - IAM:
-      - Cisco Duo: docs/iam/cisco-duo.md
+      - Duo: docs/iam/cisco-duo.md
     - Remote Desktop:
       - RustDesk: docs/remote-desktop/rustdesk.md
     - Virtualization:
@@ -59,9 +63,7 @@ nav:
     - Web Servers:
       - Caddy: docs/web-servers/caddy.md
       - Nginx Proxy Manager: docs/web-servers/npm.md
-  - Blog:
-    - blog/index.md
-  - Tags: tags.md
+  - Skills: skills.md
   # - User Guide:
   #   - user-guide/admonitions.md
   #   - user-guide/content-tabs.md
@@ -95,6 +97,7 @@ markdown_extensions:
       alternate_style: true
   - admonition
   - pymdownx.details
+  - pymdownx.tasklist
   - md_in_html
 
 
