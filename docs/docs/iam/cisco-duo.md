@@ -11,7 +11,7 @@ tags:
 
 ## Description
 
-**Cisco Duo** is a comprehensive Identity and Access Management (IAM) solution that enhances security by controlling and verifying user access. Within Duo, administrators can securely manage user identities, assign authentication tokens, and enforce policies that protect user accounts. Upon login, users receive a prompt on a separate trusted device, typically a smartphone with the Duo Mobile app, to confirm their identity. Duo supports all major platforms: Windows, macOS, iOS, Linux, and Android.
+[**Cisco Duo**](https://duo.com/) is a comprehensive Identity and Access Management (IAM) solution that enhances security by controlling and verifying user access. Within Duo, administrators can securely manage user identities, assign authentication tokens, and enforce policies that protect user accounts. Upon login, users receive a prompt on a separate trusted device, typically a smartphone with the Duo Mobile app, to confirm their identity. Duo supports all major platforms: Windows, macOS, iOS, Linux, and Android.
 
 Authentication methods include:
 

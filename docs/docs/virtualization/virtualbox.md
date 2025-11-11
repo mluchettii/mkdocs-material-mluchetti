@@ -8,7 +8,7 @@ tags:
 
 ## Description
 
-Oracle VirtualBox is a virtualization solution that allows you to run multiple guest operating systems on a single physical host. You can use this to create isolated environments for testing in my homelab, using Windows and Linux operating systems. With this, it's possible to replicate real-world scenarios for vulnerability assessments, log analysis, and threat detection.
+[**Oracle VirtualBox**](https://www.virtualbox.org/) is a virtualization solution that allows you to run multiple guest operating systems on a single physical host. You can use this to create isolated environments for testing in my homelab, using Windows and Linux operating systems. With this, it's possible to replicate real-world scenarios for vulnerability assessments, log analysis, and threat detection.
 
 ## Network adapter types
 

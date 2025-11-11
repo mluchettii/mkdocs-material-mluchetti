@@ -6,28 +6,29 @@ tags:
     - Containerization
     - Docker
     - SSL
+    - Let's Encrypt
 ---
 
 # Nginx Proxy Manager
 
 ## Description
 
-[Nginx Proxy Manager](https://github.com/NginxProxyManager/nginx-proxy-manager) (NPM) is an application that adds an intuitive interface to the Nginx web server, making it simpler for beginners to use. The functions of Nginx remain the same, allowing users to create forwarding domains, redirections, streams, and 404 hosts. It is also capable of generating and assigning free Let’s Encrypt SSL certificates, as well as Access Lists and basic HTTP authentication. Lastly, it’s also possible to add additional advanced configurations using the traditional text-based Nginx format.
+**[Nginx Proxy Manager](https://nginxproxymanager.com/)** (NPM) is an application that adds an intuitive interface to the Nginx web server, making it simpler for beginners to use. The functions of Nginx remain the same, allowing users to create forwarding domains, redirections, streams, and 404 hosts. It is also capable of generating and assigning free [**Let’s Encrypt**](https://letsencrypt.org/) **SSL certificates**, as well as Access Lists and basic HTTP authentication. Lastly, it’s also possible to add additional advanced configurations using the traditional text-based Nginx format.
 
 ## NPM installation and configuration
 
 ### NPM Docker compose
 
-Create a working directory and a Docker compose file for NPM:
+Create a working directory and a **Docker compose file** for NPM:
 
 ```bash
-mkdir -p nginx-proxy-manager && cd nginx-proxy-manager
+mkdir nginx-proxy-manager && cd nginx-proxy-manager
 sudo nano docker-compose.yml
 ```
 
 Write the following configuration to the file:
 
-```yml
+```yml title="docker-compose.yml"
 services:
   app:
     image: 'docker.io/jc21/nginx-proxy-manager:latest'
@@ -80,7 +81,7 @@ From the Dashboard, click on ‘Proxy Hosts’ and in the following screen click
 
 === "SSL"
 
-    * Request a new SSL Certificate from Let’s Encrypt. Again, some services may require HTTP/2 support and/or HSTS to be enabled.
+    * Request a new **SSL Certificate** from **Let’s Encrypt**. Again, some services may require HTTP/2 support and/or HSTS to be enabled.
     
     * As for DNS challenge, select your DNS provider and paste in the API token that you obtained from them.
     

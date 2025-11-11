@@ -6,23 +6,24 @@ tags:
     - Containerization
     - Docker
     - SSL
+    - Let's Encrypt
 ---
 
 # Caddy
 
 ## Description
 
-[Caddy](https://caddyserver.com/) is a web server/reverse proxy/load balancer that serves sites over HTTPS by automatically obtaining and renewing TLS certificates. Written in Go, Caddy provides greater memory safety guarantees than C-based web servers. Caddy also has a plugin model that extends its functionality.
+[**Caddy**](https://caddyserver.com/) is a web server/reverse proxy/load balancer that serves sites over HTTPS by automatically obtaining and renewing TLS certificates. Written in Go, Caddy provides greater memory safety guarantees than C-based web servers. Caddy also has a plugin model that extends its functionality.
 
 ## Caddy installation and configuration
 
 ### Preface
 
-For this demonstration, I am deploying [Caddy Cloudflare](https://github.com/CaddyBuilds/caddy-cloudflare), which is a custom version of the Caddy Docker image with built-in Cloudflare DNS-01 ACME validation. This is necessary for automatically obtaining SSL certificates for Cloudflare registered domains. Alternatively, for a bare metal install, one can use [xcaddy](https://github.com/caddyserver/xcaddy) to compile a custom Caddy binary with the Cloudflare DNS plugin.
+For this demonstration, I am deploying [**Caddy Cloudflare**](https://github.com/CaddyBuilds/caddy-cloudflare), which is a custom version of the Caddy Docker image with built-in Cloudflare DNS-01 ACME validation. This is necessary for automatically obtaining SSL certificates for Cloudflare registered domains. Alternatively, for a bare metal install, one can use [**xcaddy**](https://github.com/caddyserver/xcaddy) to compile a custom Caddy binary with the Cloudflare DNS plugin.
 
 ### Caddy-cloudflare Docker compose
 
-Create a working directory and a Docker compose file for Caddy-cloudflare:
+Create a working directory and a **Docker compose file** for Caddy-cloudflare:
 
 ```bash
 mkdir caddy-cloudflare && cd caddy-cloudflare
@@ -62,7 +63,7 @@ sudo docker compose up -d
 ```
 ### Caddyfile configuration
 
-The Caddyfile is a configuration file that contains the information for creating reverse proxies and obtaining SSL certificates. This version of Caddy allows us to set the ACME DNS challenge provider to use Cloudflare.
+The **Caddyfile** is a configuration file that contains the information for creating reverse proxies and obtaining SSL certificates. This version of Caddy allows us to use **Cloudflare** as the ACME DNS challenge provider.
 
 Here is an example Caddyfile for serving an Apache site that listens on port 8080:
 

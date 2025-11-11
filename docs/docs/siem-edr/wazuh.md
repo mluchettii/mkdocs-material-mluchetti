@@ -14,7 +14,7 @@ tags:
 
 ## Description
 
-**Wazuh** is an open-source security platform that provides both XDR and SIEM protection for endpoints and cloud workloads. It combines endpoint security, threat intelligence, security operations, and cloud security into a single agent and platform architecture. Being open-source gives Wazuh the advantage of being flexible, scalable, with no vendor lock-in, no license cost, and large community support.
+[**Wazuh**](https://wazuh.com/) is an open-source security platform that provides both XDR and SIEM protection for endpoints and cloud workloads. It combines endpoint security, threat intelligence, security operations, and cloud security into a single agent and platform architecture. Being open-source gives Wazuh the advantage of being flexible, scalable, with no vendor lock-in, no license cost, and large community support.
 
 Wazuh integrates the CIS (Center for Internet Security) Benchmarks into its Security Configuration Assessment (SCA) module to help enforce secure system configurations. Compliance is continuously monitored with periodic scans and real-time endpoint monitoring. Wazuh maps findings to regulatory compliance frameworks such as PCI-DSS, HIPAA, and NIST controls, providing a comprehensive approach to governance.
 

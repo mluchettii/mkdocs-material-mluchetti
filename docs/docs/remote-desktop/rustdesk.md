@@ -12,7 +12,7 @@ tags:
 
 ## Description
 
-**RustDesk** is an open-source remote desktop software written primarily in Rust. It allows remote access and control of computers and devices across multiple operating systems such as Windows, macOS, Linux, iOS, and Android. It aims to be a secure, private, and customizable alternative to proprietary software like TeamViewer or AnyDesk. It supports essential features including end-to-end encryption, file transfer, chat, and TCP tunneling. A notable advantage of RustDesk is the ability to use it with a self-hosted server, giving users full control over their data and enhanced privacy without relying on third-party servers. It offers a lightweight and user-friendly experience without mandatory account creation.
+[**RustDesk**](https://rustdesk.com/) is an open-source remote desktop software written primarily in Rust. It allows remote access and control of computers and devices across multiple operating systems such as Windows, macOS, Linux, iOS, and Android. It aims to be a secure, private, and customizable alternative to proprietary software like TeamViewer or AnyDesk. It supports essential features including end-to-end encryption, file transfer, chat, and TCP tunneling. A notable advantage of RustDesk is the ability to use it with a self-hosted server, giving users full control over their data and enhanced privacy without relying on third-party servers. It offers a lightweight and user-friendly experience without mandatory account creation.
 
 ## Server setup (Docker)
 
@@ -61,7 +61,7 @@ Self-hosting your own RustDesk server ensures a higher quality connection for yo
 
     * **Key**: (KEY)
 
-    * The Relay server and API server will be recognized automatically.
+    * The **Relay server** and **API server** will be recognized automatically.
 
 4. Verify that the client is connected to your server. Go back to the main window. The server status should say **Ready**.
 

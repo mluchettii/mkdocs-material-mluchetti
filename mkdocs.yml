@@ -14,9 +14,9 @@ theme:
     - navigation.instant.progress
     - navigation.tracking
     - navigation.tabs
-    - navigation.tabs.sticky
+    # - navigation.tabs.sticky
     - navigation.sections
-    - navigation.expand
+    # - navigation.expand
     - navigation.top
     - search.suggest
     - search.highlight
@@ -43,7 +43,7 @@ theme:
 nav:
   - Home: index.md
   - About:
-    - About Me: about/about.md
+    - Resume: about/resume.md
   - Docs:
     - Setup: docs/index.md
     - EDR/SIEM:
@@ -62,10 +62,10 @@ nav:
   - Blog:
     - blog/index.md
   - Tags: tags.md
-  # - Tutorial:
-  #   - tutorial/admonitions.md
-  #   - tutorial/content-tabs.md
-  #   - tutorial/diagram-examples.md
+  # - User Guide:
+  #   - user-guide/admonitions.md
+  #   - user-guide/content-tabs.md
+  #   - user-guide/diagram-examples.md
 
 
 plugins:
@@ -102,10 +102,14 @@ extra:
   generator: false
   social:
     - icon: fontawesome/brands/linkedin
+      name: LinkedIn
       link: https://www.linkedin.com/in/marcos-luchetti/
     - icon: fontawesome/brands/github
+      name: GitHub
       link: https://github.com/mluchettii
-
+    - icon: fontawesome/regular/envelope
+      name: Email
+      link: mailto:mluchettim@gmail.com
 
 extra_css:
   - css/extra.css

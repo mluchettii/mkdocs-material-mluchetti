@@ -15,7 +15,7 @@ tags:
 
 ## Description
 
-**Falcon** is CrowdStrike's cloud-based endpoint security platform that provides next-generation antivirus (NGAV), endpoint detection and response (EDR), threat intelligence, and more capabilities to prevent all types of attacks. It installs on endpoint devices as a lightweight sensor that consumes minimal resources and can replace traditional antivirus and other independent security tools. Falcon supports Windows, Linux, macOS, and mobile devices.
+[**Falcon**](https://www.crowdstrike.com/en-us/platform/) is CrowdStrike's cloud-based endpoint security platform that provides next-generation antivirus (NGAV), endpoint detection and response (EDR), threat intelligence, and more capabilities to prevent all types of attacks. It installs on endpoint devices as a lightweight sensor that consumes minimal resources and can replace traditional antivirus and other independent security tools. Falcon supports Windows, Linux, macOS, and mobile devices.
 
 ## Falcon sensor
 
